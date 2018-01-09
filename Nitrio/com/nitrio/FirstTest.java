@@ -25,6 +25,7 @@ public class FirstTest {
 		driver = new ChromeDriver(chromeOptions);
 		
 		Thread.sleep(3000);
+		
     ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
     driver.switchTo().window(tabs2.get(1));
     driver.close();
